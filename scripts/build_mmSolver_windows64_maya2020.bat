@@ -56,7 +56,7 @@ SET VFX_PLATFORM=2019
 SET CXX_STANDARD=11
 
 :: Setup Compiler environment. Change for your install path as needed.
-CALL "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64
+CALL "c:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64
 
 CALL scripts\internal\build_opencolorio_windows64.bat
 if errorlevel 1 goto failed_to_build_opencolorio
